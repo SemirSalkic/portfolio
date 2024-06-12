@@ -2,11 +2,12 @@
 import HomeView from '@/views/HomeView.vue'
 import ExperienceView from '@/views/ExperienceView.vue'
 import AboutMeView from '@/views/AboutMeView.vue'
+import PortfolioView from './views/PortfolioView.vue'
 </script>
 
 <template>
   <div className="relative z-0 bg-primary">
-    <div className="wrapper">
+    <div className="wrapper flex flex-col">
       <div id="hero" className="z-10">
         <HomeView />
       </div>
@@ -16,10 +17,12 @@ import AboutMeView from '@/views/AboutMeView.vue'
       >
         <AboutMeView></AboutMeView>
       </div>
+      <div id="portfolio" className="relative z-30 bg-primary w-full">
+        <PortfolioView></PortfolioView>
+      </div>
       <div id="experience" className="relative z-30 bg-primary w-full items-center flex flex-col">
         <ExperienceView />
       </div>
-      <div id="contact" className="relative z-30 bg-primary w-full h-full">cccc</div>
     </div>
   </div>
 </template>
