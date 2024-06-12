@@ -57,7 +57,7 @@
 }
 
 .parallax__stars {
-  --parallax-speed: 200;
+  --parallax-speed: 150;
   z-index: 2;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .parallax__mountain1 {
-  --parallax-speed: 250;
+  --parallax-speed: 200;
   z-index: 5;
 }
 
