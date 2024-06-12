@@ -39,10 +39,10 @@ const experience = ref([
 </script>
 
 <template>
-  <div class="w-full py-16 px-4">
+  <div class="w-full px-4 mb-20">
     <TitleComponent title="Experience" />
     <TabGroup>
-      <div class="flex items-center h-full justify-center">
+      <div class="flex items-center justify-center">
         <TabList class="flex flex-col w-3/4 rounded-xl p-1 mr-1">
           <Tab
             v-for="exp in experience"
@@ -70,7 +70,7 @@ const experience = ref([
           </Tab>
         </TabList>
 
-        <TabPanels class="mt-2 w-full ml-1 space-y-4">
+        <TabPanels class="w-full ml-1 space-y-4">
           <TabPanel
             v-for="(exp, idx) in experience"
             :key="idx"
