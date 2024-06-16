@@ -13,7 +13,7 @@ import { MotionGroupComponent } from '@vueuse/motion'
       <div id="hero" className="z-10">
         <HomeView />
       </div>
-      <div class="relative z-30 bg-primary w-full">
+      <div class="relative z-30 bg-primary w-full pt-4">
         <MotionGroupComponent preset="slideVisibleOnceBottom" delay="200" duration="600">
           <TitleComponent title="About me" />
           <AboutMeView id="aboutMe" />
