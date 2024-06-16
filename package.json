@@ -18,6 +18,7 @@
     "@tresjs/cientos": "^3.7.0",
     "@tresjs/core": "^4.0.2",
     "@vueuse/core": "^10.10.0",
+    "@vueuse/motion": "^2.2.3",
     "pinia": "^2.1.7",
     "three": "^0.165.0",
     "vue": "^3.4.21",
