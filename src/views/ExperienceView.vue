@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
-import TitleComponent from '@/components/TitleComponent.vue'
 
 const experience = ref([
   {
@@ -40,7 +39,6 @@ const experience = ref([
 
 <template>
   <div class="w-full px-4 mb-20">
-    <TitleComponent title="Experience" />
     <TabGroup>
       <div class="flex flex-col lg:flex-row items-center justify-center gap-2">
         <TabList class="flex flex-row lg:flex-col w-full lg:w-3/4 rounded-xl p-1">

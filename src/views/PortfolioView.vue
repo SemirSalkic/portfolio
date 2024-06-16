@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import PortfolioCard from '@/components/PortfolioCard.vue'
-import TitleComponent from '@/components/TitleComponent.vue'
 import SED from '@/assets/projects/SED.png'
 import SEW from '@/assets/projects/SEW.png'
 import WA from '@/assets/projects/WA.gif'
@@ -31,13 +30,14 @@ const portfolio = [
 </script>
 
 <template>
-  <TitleComponent title="Portfolio"></TitleComponent>
-  <div v-for="item in portfolio" :key="item.id" class="mt-16 flex flex-col gap-10 md:gap-20 px-10">
-    <PortfolioCard
-      :index="item.id"
-      :name="item.name"
-      :description="item.description"
-      :image="item.image"
-    />
+  <div class="px-10 flex flex-col gap-10 md:gap-20">
+    <div v-for="item in portfolio" :key="item.id">
+      <PortfolioCard
+        :index="item.id"
+        :name="item.name"
+        :description="item.description"
+        :image="item.image"
+      />
+    </div>
   </div>
 </template>
