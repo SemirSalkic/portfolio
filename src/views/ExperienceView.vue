@@ -58,11 +58,11 @@ const experience = ref([
                   : 'text-blue-100 hover:bg-white/[0.12] hover:text-white'
               ]"
             >
-              <div class="flex flex-col items-center">
-                <span class="text-lg font-semibold">{{ exp.jobTitle }}</span>
-                <span class="font-semibold">{{ exp.company }}</span>
-                <span class="font-semibold">{{ exp.location }}</span>
-                <span class="font-semibold">{{ exp.date }}</span>
+              <div class="flex flex-col items-center font-semibold">
+                <span class="md:text-lg">{{ exp.jobTitle }}</span>
+                <span class="text-sm md:text-base">{{ exp.company }}</span>
+                <span class="text-sm md:text-base">{{ exp.location }}</span>
+                <span class="text-sm md:text-base">{{ exp.date }}</span>
               </div>
             </button>
           </Tab>
@@ -76,11 +76,15 @@ const experience = ref([
           >
             <div class="flex flex-col space-y-2">
               <div class="flex justify-between items-center">
-                <span class="text-lg font-bold">{{ exp.jobTitle }}</span>
-                <span class="font-medium">{{ exp.date }}</span>
+                <span class="md:text-lg font-bold">{{ exp.jobTitle }}</span>
+                <span class="text-sm md:text-base font-medium">{{ exp.date }}</span>
               </div>
               <ul class="list-disc list-inside pl-5 space-y-1">
-                <li v-for="(detail, idx) in exp.details" :key="idx" class="font-medium">
+                <li
+                  v-for="(detail, idx) in exp.details"
+                  :key="idx"
+                  class="text-sm md:text-base font-medium"
+                >
                   {{ detail }}
                 </li>
               </ul>
