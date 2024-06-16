@@ -42,8 +42,8 @@ const experience = ref([
   <div class="w-full px-4 mb-20">
     <TitleComponent title="Experience" />
     <TabGroup>
-      <div class="flex items-center justify-center">
-        <TabList class="flex flex-col w-3/4 rounded-xl p-1 mr-1">
+      <div class="flex flex-col lg:flex-row items-center justify-center gap-2">
+        <TabList class="flex flex-row lg:flex-col w-full lg:w-3/4 rounded-xl p-1">
           <Tab
             v-for="exp in experience"
             as="template"
@@ -70,7 +70,7 @@ const experience = ref([
           </Tab>
         </TabList>
 
-        <TabPanels class="w-full ml-1 space-y-4">
+        <TabPanels class="w-full space-y-4">
           <TabPanel
             v-for="(exp, idx) in experience"
             :key="idx"
