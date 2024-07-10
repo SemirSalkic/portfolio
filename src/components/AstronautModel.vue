@@ -29,7 +29,7 @@ onLoop(({ delta, elapsed }) => {
   <div class="min-h-screen">
     <TresCanvas>
       <TresPerspectiveCamera :fov="65" :position="[20, 3, -9]" />
-      <OrbitControls :enable-zoom="false" />
+      <OrbitControls />
       <Suspense>
         <TresMesh ref="astronautRef" :rotation="[6, 2.1, 6.5]">
           <GLTFModel :path="spacemanScene" />

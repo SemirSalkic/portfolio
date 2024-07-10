@@ -35,7 +35,10 @@ import SpacemanAnimation from '@/components/AstronautModel.vue'
         <img className="parallax__crater" src="../assets/parallax/5Crater.svg" alt="" />
         <img className="parallax__sun" src="../assets/parallax/6Sun.svg" alt="" />
 
-        <SpacemanAnimation class="z-10" />
+        <div class="relative z-10">
+          <SpacemanAnimation class="absolute inset-0" />
+          <div class="absolute inset-0 bg-black bg-opacity-0 z-20"></div>
+        </div>
       </section>
     </div>
   </main>
