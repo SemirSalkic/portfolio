@@ -3,11 +3,10 @@ import THREE from 'three'
 import { TresCanvas, useRenderLoop } from '@tresjs/core'
 import { OrbitControls, GLTFModel } from '@tresjs/cientos'
 import { shallowRef } from 'vue'
+import spacemanScene from '../assets/spaceman.glb?url'
 
 const astronautRef = shallowRef<THREE.Mesh>()
 const { onLoop } = useRenderLoop()
-
-const spaceman = '/src/assets/spaceman.glb'
 
 onLoop(({ delta, elapsed }) => {
   if (!astronautRef.value) return
@@ -33,7 +32,7 @@ onLoop(({ delta, elapsed }) => {
       <OrbitControls :enable-zoom="false" />
       <Suspense>
         <TresMesh ref="astronautRef" :rotation="[6, 2.1, 6.5]">
-          <GLTFModel :path="spaceman" />
+          <GLTFModel :path="spacemanScene" />
         </TresMesh>
       </Suspense>
       <TresDirectionalLight :intensity="5" :position="[-1, 2.5, -1]" />
