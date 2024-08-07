@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 This is a portfolio website built with Vue.js, TypeScript, Tailwind CSS, Pinia and TresJs.
 
